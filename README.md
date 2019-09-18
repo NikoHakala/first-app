@@ -1,4 +1,5 @@
-﻿# Not a working build 10.09.2019
+﻿
+# Working react form app with 2 forms
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
