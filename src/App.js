@@ -14,6 +14,11 @@ function App() {
     event.preventDefault();
     setListItems([...listItems, todos]);
   }
+  
+  const deleteTodo = (event) => {
+    event.preventDefault();
+    setListItems(listItems.filter((item, index) => parseInt(event.target.id) !== index))
+  }
 
   return (
     <div className="App">
@@ -29,6 +34,7 @@ function App() {
             <tr key={index}>
               <td>{item.desc}</td>
               <td>{item.date}</td>
+              <button id={index} onClick={deleteTodo}>delete</button>
             </tr>)
           }
         </tbody></table>
